@@ -1,0 +1,22 @@
+name: PYTHON-PROJECT
+on: 
+ push:
+   branches: [ "main" ]
+jobs:
+  python-ci:
+   name: python-app
+   runs-on: ubuntu-latest
+   steps:
+     - name: checkout code
+       uses: actions/checkout@v4
+     - name: setup python
+       uses: actions/setup-python@v5
+       with:
+         python-version: '3.12'
+     - name: Python versions
+       run: python --version
+     - name: run the python app
+       run: python -m py_compile app.py
+     - name: Run and provide input values
+       run: |
+        printf "10\n2\n" | python app.py

@@ -19,4 +19,4 @@ jobs:
        run: python -m py_compile app.py
      - name: Run and provide input values
        run: |
-        printf "10\n2\n" | python app.py
+        printf "%s\n%s\n" "$num1" "$num2"| python app.py

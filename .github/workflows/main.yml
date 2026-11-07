@@ -26,4 +26,4 @@ jobs:
         run: |
           echo "First number is: $n1"
           echo "second number is: $n2"
-          printf "%s\n%s\n" "$num1" "$num2"| python app.p
+          printf "%s\n%s\n" "$num1" "$num2"| python app.py

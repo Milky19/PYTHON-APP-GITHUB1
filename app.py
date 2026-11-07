@@ -1,8 +1,8 @@
 num1=int(input("enter first number:"))
 num2=int(input("enter second number:"))
 print("sum is:",num1+num2)
-print("sum is:",num1-num2)
-print("sum is:",num1*num2)
-print("thanks for using my application:")
+print("sub is:",num1-num2)
+print("Product is:",num1*num2)
+print("Thanks for using my application:")
 
 

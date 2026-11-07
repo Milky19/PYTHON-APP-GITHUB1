@@ -18,5 +18,10 @@ jobs:
      - name: run the python app
        run: python -m py_compile app.py
      - name: Run and provide input values
+       env:
+         n1: ${{inputs.n1}}
+         n2: ${{inputs.n2}}
        run: |
-        printf "%s\n%s\n" "$num1" "$num2"| python app.py
+          echo "First number is:$n1"
+          echo "second number is: $n2"
+        printf "%s\n%s\n" "$num1" "$num2"| python app.p

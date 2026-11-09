@@ -1,5 +1,4 @@
 name: PYTHON-PROJECT
-
 on:
   workflow_dispatch:
     inputs:
